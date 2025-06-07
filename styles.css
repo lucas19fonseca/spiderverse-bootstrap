@@ -1,0 +1,67 @@
+  body {
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('/assets/fundo-capa.webp');
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(2px);
+  }
+
+  .login-card {
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid #ff004c;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #ff004c, 0 0 40px #007bff;
+  }
+
+  .login-card h2 {
+      color: #ff004c;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ff004c;
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+
+  .form-control {
+      background-color: #1a1a1a;
+      border: 1px solid #ff004c;
+      color: #fff;
+  }
+
+  .form-control::placeholder {
+      color: #fff;
+      opacity: 1;
+  }
+
+  .form-control:focus {
+      background-color: #1a1a1a;
+      color: #fff;
+      border-color: #007bff;
+      box-shadow: 0 0 10px #007bff;
+  }
+
+  .btn-login {
+      background: linear-gradient(45deg, #ff004c, #007bff);
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s ease;
+  }
+
+  .btn-login:hover {
+      background: linear-gradient(45deg, #007bff, #ff004c);
+      box-shadow: 0 0 10px #ff004c, 0 0 8px #007bff;
+  }
+
+  .spider-logo {
+      width: auto;
+      height: 200px;
+      display: block;
+      margin: 0 auto 1rem;
+  }
