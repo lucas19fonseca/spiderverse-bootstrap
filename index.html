@@ -6,157 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aranhaverso</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
   <header>
-    <nav id="navbar" class="navbar navbar-expand-lg bg-danger navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="" class="" alt="">Aranhaverso</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#sinopse">Sinopse</a></li>
-            <li class="nav-item"><a class="nav-link" href="#elenco">Elenco</a></li>
-            <li class="nav-item"><a class="nav-link" href="#curiosidades">Curiosidades</a></li>
-            <li class="nav-item"><a class="nav-link" href="#trilha">Trilha Sonora</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="nav"></div>
   </header>
   <!-- Navbar -->
-
-
-  <!-- Offcanvas Menu -->
-  <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasMenu">
-    <div class="offcanvas-header">
-      <h5>Menu</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  <div class="container-fluid">
+    <div class="row p-4 m-4">
+      <!-- <div id="carousel"></div>-->
+     <!-- <audio id="myAudio" src="A1.mp3" controls></audio>-->
     </div>
-    <div class="offcanvas-body">
-      <a href="#sinopse" class="nav-link">Sinopse</a>
-      <a href="#elenco" class="nav-link">Elenco</a>
-      <a href="#curiosidades" class="nav-link">Curiosidades</a>
-      <a href="#trilha" class="nav-link">Trilha Sonora</a>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row p-4 m-4">
+      <div id="sinopse"></div>
+    </div>
+  </div>
+
+
+    <div class="container-fluid">
+    <div class="row p-4 m-4">
+      <div id="elenco"></div>
     </div>
   </div>
 
 
 
-  <div class="container mt-5 pt-5">
-
-    <!-- Sinopse -->
-    <section id="sinopse" class="my-5">
-      <h2>Sinopse</h2>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Nome do Filme</h5>
-          <p class="card-text">Aqui vai a sinopse do seu filme ou série escolhida. Conte um pouco da história, onde se
-            passa, e quem são os personagens principais.</p>
-          <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#trailer">Mostrar Trailer</button>
-          <div id="trailer" class="collapse mt-3">
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/SEU_VIDEO" title="YouTube video" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Elenco -->
-    <section id="elenco" class="my-5">
-      <h2>Elenco</h2>
-      <div id="carouselElenco" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/assets/miles.jpg" class="d-block w-200" alt="Ator 1">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Miles morales</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/gwen.jpg" class="d-block w-10" alt="Ator 2">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>gwen Stacy</h5>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselElenco" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselElenco" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </section>
-
-    <!-- Curiosidades -->
-    <section id="curiosidades" class="my-5">
-      <h2>Curiosidades</h2>
-      <div class="accordion" id="accordionCuriosidades">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#curiosidade1">
-              Curiosidade 1
-            </button>
-          </h2>
-          <div id="curiosidade1" class="accordion-collapse collapse show">
-            <div class="accordion-body">
-              Texto da curiosidade sobre o filme ou série.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#curiosidade2">
-              Curiosidade 2
-            </button>
-          </h2>
-          <div id="curiosidade2" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              Outra curiosidade legal.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Trilha Sonora -->
-    <section id="trilha" class="my-5">
-      <h2>Trilha Sonora</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Música 1 - Artista</li>
-        <li class="list-group-item">Música 2 - Artista</li>
-        <li class="list-group-item">Música 3 - Artista</li>
-      </ul>
-    </section>
-
-    <!-- Modal -->
-    <div class="text-center my-5">
-      <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalDiretor">Sobre o Diretor</button>
-    </div>
-
-    <div class="modal fade" id="modalDiretor" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Diretor</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            <p>Aqui você coloca a bio ou informações legais sobre o diretor ou criador da obra.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script>
+    $(function () {
+      $("#carousel").load("carousel.html");
+      $("#nav").load("nav.html");
+      $("#sinopse").load("sinopse.html");
+      $("#elenco").load("elenco.html");
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

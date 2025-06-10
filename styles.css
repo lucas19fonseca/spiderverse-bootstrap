@@ -1,4 +1,5 @@
-  body {
+  /*login*/
+  .login-menu {
       background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
       color: #fff;
       font-family: 'Arial', sans-serif;
@@ -65,3 +66,56 @@
       display: block;
       margin: 0 auto 1rem;
   }
+/*login*/
+
+/*nav*/
+.custom-navbar {
+  background: rgba(205, 0, 0); /* vermelho fosco */
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  padding: 10px 20px;
+  border-radius: 0 0 16px 16px;
+}
+
+.custom-navbar .nav-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.custom-navbar .nav-link {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+/*nav*/
+
+/*sinopse*/
+
+/*sinopse*/
