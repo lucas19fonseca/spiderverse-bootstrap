@@ -2,48 +2,94 @@
   <div class="container">
     <h2 class="text-danger mb-4 display-5 text-shadow">🕷️ Personagens</h2>
 
+    <!-- Carrossel -->
+    <div id="carrosselPersonagens" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-4 shadow">
+
+        <div class="carousel-item active">
+          <img src="img/miles.jpg" class="d-block w-100" alt="Miles Morales">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/gwen.jpg" class="d-block w-100" alt="Gwen Stacy">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/peterb.jpg" class="d-block w-100" alt="Peter B. Parker">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPersonagens" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrosselPersonagens" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Cards de Personagens -->
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
-        <div class="p-4 border border-danger rounded-4 shadow bg-dark">
-          <h5 class="text-danger mb-2">Miles Morales</h5>
-          <p>O protagonista adolescente que assume o manto do Homem-Aranha no seu universo. Corajoso e criativo, ele descobre seus poderes e responsabilidades.</p>
+        <div class="card bg-dark border-danger rounded-4 shadow h-100">
+          <img src="img/miles_card.jpg" class="card-img-top" alt="Miles Morales">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Miles Morales</h5>
+            <p class="card-text">O protagonista adolescente que assume o manto do Homem-Aranha no seu universo. Corajoso e criativo.</p>
+          </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="p-4 border border-danger rounded-4 shadow bg-dark">
-          <h5 class="text-danger mb-2">Peter B. Parker</h5>
-          <p>Versão mais velha e desacreditada do Homem-Aranha, que vira mentor de Miles.</p>
+        <div class="card bg-dark border-danger rounded-4 shadow h-100">
+          <img src="img/peterb_card.jpg" class="card-img-top" alt="Peter B. Parker">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Peter B. Parker</h5>
+            <p class="card-text">Versão mais velha e desacreditada do Aranha, que vira mentor de Miles.</p>
+          </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="p-4 border border-danger rounded-4 shadow bg-dark">
-          <h5 class="text-danger mb-2">Gwen Stacy / Spider-Gwen</h5>
-          <p>Uma versão feminina e badass do Homem-Aranha de outra dimensão, habilidosa e ágil.</p>
+        <div class="card bg-dark border-danger rounded-4 shadow h-100">
+          <img src="img/gwen_card.jpg" class="card-img-top" alt="Gwen Stacy">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Gwen Stacy / Spider-Gwen</h5>
+            <p class="card-text">Uma versão feminina e ágil do Aranha de outro universo, destemida e habilidosa.</p>
+          </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="p-4 border border-danger rounded-4 shadow bg-dark">
-          <h5 class="text-danger mb-2">Spider-Man Noir</h5>
-          <p>Homem-Aranha sombrio e durão da década de 1930, com estilo noir.</p>
+        <div class="card bg-dark border-danger rounded-4 shadow h-100">
+          <img src="img/noir_card.jpg" class="card-img-top" alt="Spider-Man Noir">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Spider-Man Noir</h5>
+            <p class="card-text">Homem-Aranha sombrio da década de 1930, com estilo detetivesco noir.</p>
+          </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="p-4 border border-danger rounded-4 shadow bg-dark">
-          <h5 class="text-danger mb-2">Peni Parker</h5>
-          <p>Garota piloto de robô futurista conectada a uma aranha radioativa.</p>
+        <div class="card bg-dark border-danger rounded-4 shadow h-100">
+          <img src="img/peni_card.jpg" class="card-img-top" alt="Peni Parker">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Peni Parker</h5>
+            <p class="card-text">Garota piloto de robô futurista, conectada mentalmente a uma aranha radioativa.</p>
+          </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="p-4 border border-danger rounded-4 shadow bg-dark">
-          <h5 class="text-danger mb-2">Peter Porker / Porco-Aranha</h5>
-          <p>Versão divertida e cartunesca do Homem-Aranha, um porco antropomórfico.</p>
+        <div class="card bg-dark border-danger rounded-4 shadow h-100">
+          <img src="img/porco_card.jpg" class="card-img-top" alt="Peter Porker">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Peter Porker</h5>
+            <p class="card-text">Versão cartunesca e divertida do Homem-Aranha — um porco super-herói.</p>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
