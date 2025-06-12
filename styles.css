@@ -59,14 +59,14 @@
       background: linear-gradient(45deg, #007bff, #ff004c);
       box-shadow: 0 0 10px #ff004c, 0 0 8px #007bff;
   }
-
-  .spider-logo {
-      width: auto;
-      height: 200px;
-      display: block;
-      margin: 0 auto 1rem;
-  }
 /*login*/
+.icon-logo {
+    width: auto;       /* diminui o tamanho */
+    height: 60px;      /* deixa quadrado pra fazer o círculo perfeito */
+    border-radius: 50%; /* deixa redondo */
+    object-fit: cover; /* mantém a proporção da imagem dentro do círculo */
+    margin-right: 8px; /* espaçamento entre ícone e texto */
+    vertical-align: middle; /* alinha com o texto */}
 
 /*nav*/
 .custom-navbar {
@@ -175,4 +175,64 @@ body::after {
     );
   background-size: 300px 300px;
   z-index: 0;
+}
+/*carousel*/
+#carouselSpider {
+  width: 100%;
+  max-width: 800px; /* ou o tamanho que quiser */
+  height: 750px; /* altura de retângulo */
+  margin: 0 auto; /* centraliza horizontalmente */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#carouselSpider .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+/*nav*/
+.custom-navbar {
+  background: rgba(205, 0, 0);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.custom-navbar .nav-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.custom-navbar .nav-link {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
