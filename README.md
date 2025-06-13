@@ -1,4 +1,3 @@
 ﻿# spiderverse-bootstrap
-
- - <a href=" https://www.figma.com/design/g8crJdSmpBuMrEJXNXGRPc/SpiderVerce?node-id=0-1&p=f&t=kZYR9av5v3wXmDL7-0">protótipo das telas</a>
+<a href=" https://www.figma.com/design/g8crJdSmpBuMrEJXNXGRPc/SpiderVerce?node-id=41-103&t=M9UE1LBybbtIMwEV-0">protótipo das telas</a>
 
