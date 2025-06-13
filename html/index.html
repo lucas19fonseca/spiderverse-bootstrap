@@ -7,6 +7,7 @@
   <title>Aranhaverso</title>
   <link rel="stylesheet" href="/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
       background-color: #0b0c10;
@@ -35,6 +36,12 @@
     .btn-primary:hover {
       background-color: #ff0033;
     }
+
+    /* Novo: diminuir espaçamento geral das rows */
+    .container-fluid .row {
+      padding: 1rem !important;
+      margin: 0.5rem 0 !important;
+    }
   </style>
 </head>
 
@@ -42,70 +49,67 @@
 
   <!-- Navbar -->
   <div class="container-fluid">
-    <div class="row p-4 m-4">
+    <div class="row">
       <div id="nav"></div>
     </div>
 
     <div class="container-fluid">
-      <div class="row p-4 m-4">
-        <div id="navtabs"></div>
+      <div class="row">
+        <div id="sinopse"></div>
       </div>
     </div>
-      
-  <div style="padding-top:70px;">
 
-    <!-- Carousel -->
     <div class="container-fluid">
-      <div class="row p-4 m-4">
-        <div id="carousel"></div>
+      <div class="row">
+        <div id="trilha"></div>
       </div>
     </div>
 
     <!-- Cards -->
     <div class="container-fluid">
-      <div class="row p-4 m-4">
-        <div id="card"></div>
+      <div class="row">
+        <div id="personagens"></div>
       </div>
     </div>
 
-    
+    <!-- Carousel -->
+    <div class="container-fluid">
+      <div class="row">
+        <div id="carousel"></div>
+      </div>
+    </div>
 
     <!-- Accordion -->
     <div class="container-fluid">
-      <div class="row p-4 m-4">
-        <div id="accordion"></div>
+      <div class="row">
+        <div id="curiosidades"></div>
       </div>
     </div>
 
     <!-- Collapse -->
     <div class="container-fluid">
-      <div class="row p-4 m-4">
+      <div class="row">
         <div id="collapse"></div>
       </div>
     </div>
-  </div>
 
-  <div class="container-fluid">
-  <div class="row p-4 m-4">
-    <div id="listgroup"></div>
   </div>
-</div>
-
 
   <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
   <script>
     $(function () {
-      $("#accordion").load("accordion.html");
-      $("#card").load("card.html");
+      $("#curiosidades").load("curiosidades.html");
+      $("#personagens").load("card.html");
+      $("#trilha").load("trilha.html");
       $("#carousel").load("carousel.html");
       $("#modal").load("modal.html");
       $("#nav").load("nav.html");
-      $("#navtabs").load("navtabs.html");
-      $("#listgroup").load("listgroup.html");
-    });
-  </script>
+      $("#sinopse").load("navtabs.html");
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
