@@ -102,6 +102,11 @@
   background: #fff;
   transition: width 0.3s ease;
 }
+.spider-logo {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto 20px auto;}
 
 .custom-navbar .nav-link:hover::after {
   width: 100%;
@@ -177,19 +182,20 @@ body::after {
   z-index: 0;
 }
 /*carousel*/
-#carouselSpider {
-  width: 100%;
-  max-width: 800px; /* ou o tamanho que quiser */
-  height: 750px; /* altura de retângulo */
-  margin: 0 auto; /* centraliza horizontalmente */
+#carouselExample {
+  max-height: 500px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
-#carouselSpider .carousel-item img {
-  height: 100%;
+#carouselExample .carousel-item img {
+  height: 900px;
   object-fit: cover;
+  object-position: center;
+  width: 10%;
 }
+
+
 /*nav*/
 .custom-navbar {
   background: rgba(205, 0, 0);
@@ -235,4 +241,19 @@ body::after {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.tab-content {
+  background: rgba(33, 37, 41, 0.95); /* leve transparência no fundo */
+}
+
+.tab-pane img {
+  transition: transform 0.3s ease;
+}
+
+.tab-pane img:hover {
+  transform: scale(1.02);
 }
