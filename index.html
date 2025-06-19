@@ -43,71 +43,280 @@
       padding: 1rem !important;
       margin: 0.5rem 0 !important;
     }
+    
   </style>
 </head>
 
+
 <body>
 
-  <!-- Navbar -->
-  <div class="container-fluid">
-    <div class="row">
-      <div id="nav"></div>
-    </div>
-
+ 
+  <nav class="navbar navbar-expand-md navbar-danger bg-red fixed-top">
     <div class="container-fluid">
-      <div class="row">
-        <div id="sinopse"></div>
+      <a class="navbar-brand" href="#">
+        <img src="https://i.etsystatic.com/14014880/r/il/fe4fc5/5034017373/il_570xN.5034017373_vw2i.jpg"
+          alt="icone logo" class="icon-logo "><span class="text-white">Aranhaverso</span>
+      </a>
+      <!-- Botão Menu só visível em telas menores que md -->
+      <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasMenu">
+        Menu
+      </button>
+
+      <!-- Links visíveis só em md pra cima -->
+      <div class="collapse navbar-collapse d-none d-md-block">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" href="#sinopse">Sinopse</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#trilha">Trilha Sonora</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#personagens">Personagens</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#curiosidades">Curiosidades</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
+  
 
-    <div class="container-fluid">
-      <div class="row">
-        <div id="trilha"></div>
-      </div>
+  <!-- Offcanvas lateral -->
+  <div class="offcanvas offcanvas-start text-bg-dark" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
-
-    <!-- Cards -->
-    <div class="container-fluid">
-      <div class="row">
-        <div id="personagens"></div>
-      </div>
+    <div class="offcanvas-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-dark text-white"><a href="#sinopse"
+            class="text-decoration-none text-white">Sinopse</a></li>
+        <li class="list-group-item bg-dark text-white"><a href="#personagens"
+            class="text-decoration-none text-white">Personagens</a></li>
+        <li class="list-group-item bg-dark text-white"><a href="#trilha" class="text-decoration-none text-white">Trilha
+            Sonora</a></li>
+        <li class="list-group-item bg-dark text-white"><a href="#curiosidades"
+            class="text-decoration-none text-white">Curiosidades</a></li>
+      </ul>
     </div>
-
-    <!-- Carousel -->
-    <div class="container-fluid">
-      <div class="row">
-        <div id="carousel"></div>
-      </div>
-    </div>
-
-    <!-- Accordion -->
-    <div class="container-fluid">
-      <div class="row">
-        <div id="curiosidades"></div>
-      </div>
-    </div>
-
-    <!-- Collapse -->
-    <div class="container-fluid">
-      <div class="row">
-        <div id="collapse"></div>
-      </div>
-    </div>
-
   </div>
 
-  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-  <script>
-    $(function () {
-      $("#curiosidades").load("curiosidades.html");
-      $("#personagens").load("card.html");
-      $("#trilha").load("trilha.html");
-      $("#carousel").load("carousel.html");
-      $("#modal").load("modal.html");
-      $("#nav").load("nav.html");
-      $("#sinopse").load("navtabs.html");
-    });
-  </script>
+  <!-- SINOPSE -->
+  <div class="container bg-dark p-4 rounded shadow" id="sinopse" style="margin-top: 120px;">
+    <h4 class="mb-3 text-white"><i class="bi bi-film"></i> Sinopse</h4>
+    <div class="d-flex flex-lg-nowrap flex-wrap align-items-start gap-4">
+      <img src="/assets/download (1).jpg" alt="Miles Morales" class="img-fluid rounded shadow border border-secondary"
+        style="max-width: 320px; object-fit: cover;">
+      <p class="m-0 text-justify text-white" style="line-height: 1.6;">
+        Em uma Nova York vibrante, cheia de vida e perigos ocultos, Miles Morales é um adolescente comum que vê sua vida
+        mudar drasticamente ao ser picado por uma aranha radioativa. Com novos poderes e responsabilidades, ele se torna
+        o novo Homem-Aranha, mas logo percebe que o desafio vai muito além do que imaginava. Um vilão poderoso e
+        misterioso ameaça colapsar as barreiras entre múltiplas dimensões, colocando em risco não só a sua cidade, mas
+        todo o multiverso.
+      </p>
+    </div>
+  </div>
+
+  <style>
+    audio.custom-audio {
+      width: 100%;
+      margin-top: 30px;
+      border-radius: 6px;
+    }
+  </style>
+
+
+  <div class="container bg-dark p-4 rounded shadow my-5" id="trilha">
+    <h4 class="mb-3 text-white"><i class="bi bi-music-note-beamed"></i> Trilha Sonora</h4>
+    <div class="d-flex flex-lg-nowrap flex-wrap align-items-start gap-4">
+      <img src="/assets/download (2).jpg" alt="Sunflower" class="img-fluid rounded shadow border border-secondary"
+        style="max-width: 320px; object-fit: cover;">
+      <div style="flex-grow: 1;">
+        <p class="m-0 text-justify text-white" style="line-height: 1.6;">
+          Lançada em 2018 como parte da trilha sonora oficial de Homem-Aranha no Aranhaverso, "Sunflower" é uma faixa
+          leve, melódica e nostálgica, marcada pelo estilo descontraído e cativante de Post Malone e Swae Lee. A
+          música fala sobre amor, lealdade e a dificuldade de manter relações em meio a problemas pessoais e mudanças.
+          Com uma batida suave e refrão repetitivo e grudante, ela rapidamente se tornou um dos maiores sucessos da
+          carreira dos dois artistas, além de ganhar destaque por representar perfeitamente o clima emotivo e jovem do
+          filme. No longa, a música aparece em momentos importantes da jornada de Miles Morales, simbolizando sua
+          relação com a família, os desafios da adolescência e sua adaptação como novo herói.
+        </p>
+        <audio controls class="custom-audio">
+          <source src="/assets/Post Malone, Swae Lee - Sunflower.mp3" type="audio/mpeg" />
+          Seu navegador não suporta o elemento de áudio.
+        </audio>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-5 p-4 rounded bg-dark" id="personagens">
+    <h2 class="text-white mb-4 text-center">
+      <i class="bi bi-people-fill fs-5"></i>
+      <img src="/assets/icone-home-removebg-preview.png" style="width: 94px; margin-left: 5px; margin-right: 5px;">
+      Personagens
+    </h2>
+
+    <div class="row g-4">
+      <!-- Miles Morales -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark text-white border-secondary">
+          <img src="/assets/miles.svg" class="card-img-top" alt="Miles Morales">
+          <div class="card-body">
+            <h5 class="card-title">Miles Morales</h5>
+            <p class="card-text">Um adolescente do Brooklyn que se torna o novo Homem-Aranha de seu universo.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gwen Stacy -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark text-white border-secondary">
+          <img src="/assets/gwen.svg" class="card-img-top" alt="Gwen Stacy">
+          <div class="card-body">
+            <h5 class="card-title">Gwen Stacy</h5>
+            <p class="card-text">A Spider-Gwen, heroína ágil e destemida de outro universo, amiga e aliada de Miles.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Peter B. Parker -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark text-white border-secondary">
+          <img src="/assets/peterb.svg" class="card-img-top" alt="Peter B. Parker">
+          <div class="card-body">
+            <h5 class="card-title">Peter B. Parker</h5>
+            <p class="card-text">O Homem-Aranha veterano, cansado e experiente, que atua como mentor de Miles.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spider-Man Noir -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark text-white border-secondary">
+          <img src="/assets/noir.svg" class="card-img-top" alt="Spider-Man Noir">
+          <div class="card-body">
+            <h5 class="card-title">Spider-Man Noir</h5>
+            <p class="card-text">Um Homem-Aranha sombrio dos anos 30, que luta contra o crime em preto e branco.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Peni Parker -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark text-white border-secondary">
+          <img src="/assets/penib.svg" class="card-img-top" alt="Peni Parker">
+          <div class="card-body">
+            <h5 class="card-title">Peni Parker</h5>
+            <p class="card-text">Jovem prodígio que pilota um robô chamado SP//dr ao lado de uma aranha radioativa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spider-Ham -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-dark text-white border-secondary">
+          <img src="/assets/porker.svg" class="card-img-top" alt="Spider-Ham">
+          <div class="card-body">
+            <h5 class="card-title">Spider-porker</h5>
+            <p class="card-text">Uma versão cartunesca do Homem-Aranha, um porco com poderes aracnídeos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Curiosidades do Aranhaverso em Accordion -->
+  <div class="container my-5" id="curiosidades">
+    <div class="row">
+      <div class="col">
+        <div class="p-4 bg-dark rounded shadow text-white">
+          <h3 class="mb-4 text-center">
+            <i class="bi bi-lightbulb-fill me-2"></i>Curiosidades do Aranhaverso
+          </h3>
+
+          <div class="accordion" id="curiosidadesAccordion">
+            <div class="accordion-item bg-dark text-white border-secondary">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Qual a técnica inovadora usada na animação do filme?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#curiosidadesAccordion">
+                <div class="accordion-body">
+                  O filme utilizou uma técnica de animação inovadora que mistura 2D e 3D para simular o visual das
+                  HQs.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-white border-secondary">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Qual música da trilha sonora virou sucesso?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#curiosidadesAccordion">
+                <div class="accordion-body">
+                  "Sunflower", música de Post Malone e Swae Lee, virou um dos maiores sucessos da trilha e ganhou
+                  disco de platina múltiplas vezes.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-white border-secondary">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Quantas versões do traje de Miles Morales foram criadas?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#curiosidadesAccordion">
+                <div class="accordion-body">
+                  Foram criadas mais de 177 versões diferentes do traje de Miles Morales durante o desenvolvimento.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-white border-secondary">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Que prêmio importante o filme ganhou em 2019?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#curiosidadesAccordion">
+                <div class="accordion-body">
+                  Ganhou o Oscar de Melhor Animação em 2019, superando grandes produções da Disney e Pixar.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-white border-secondary">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Quando e onde foi criado o conceito de "Aranhaverso" nos quadrinhos?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#curiosidadesAccordion">
+                <div class="accordion-body">
+                  Nos quadrinhos, o conceito de "Aranhaverso" foi criado na saga Spider-Verse de 2014.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
